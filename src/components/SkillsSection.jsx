@@ -9,7 +9,7 @@ const SkillsSection = () => {
 
         { name: "HTML", level: 95, category: "frontend" },
         { name: "CSS", level: 90, category: "frontend" },
-        { name: "JavaScript", level: 60, category: "frontend" },
+        { name: "JavaScript", level: 75, category: "frontend" },
         { name: "React", level: 60, category: "frontend" },
         { name: "Tailwind CSS", level: 80, category: "frontend" },
         { name: "Next.js", level: 60, category: "frontend" },

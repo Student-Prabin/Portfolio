@@ -61,6 +61,7 @@ export const Navbar = () => {
                     isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                 )}>
                     <div className="flex flex-col space-y-8 text-xl">
+                        
                         {navItems.map((item, key) => (
                             <a 
                                 key={key}

@@ -9,7 +9,7 @@ const StarBackground = () => {
         genMeteors();
 
         const reSize=()=>{
-            generateStars();
+            genStars();
         }
 
         window.addEventListener('resize',reSize)

@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from 'lucide-react'
+import { Briefcase, Code, User, Zap } from 'lucide-react'
 import React from 'react'
 
 const AboutSection = () => {
@@ -12,14 +12,16 @@ const AboutSection = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
           {/* Left part */}
           <div className='space-y-6'>
-            <h3 className='text-2xl font-semibold'>Passonate Web Developer & a Student</h3>
-            <p className='text-muted-foreground'>I am passonate about creating good solutions to complex problems,
-              and I'm constantly learning new technologies and techniques
-              to stay at the forefront of the ever-evolving web landscape.
+            <h3 className='text-2xl font-semibold'>Aspiring Web Developer</h3>
+            <p className='text-muted-foreground text-justify'>I am currently pursuing a BSc.IT degree and focusing my career 
+              goals on web development. To build a strong technical skill set, I am actively learning full-stack engineering 
+              with a primary focus on the MERN stack. I enjoy building dynamic web projects and learning how frontend design 
+              and backend logic work together.
             </p>
-            <p className='text-muted-foreground'>I am passonate about creating good solutions to complex problems,
-              and I'm constantly learning new technologies and techniques
-              to stay at the forefront of the ever-evolving web landscape.
+            <p className='text-muted-foreground text-justify'>I prefer learning by doing, so I am constantly working on practical projects to 
+              improve my coding skills. I enjoy the process of creating smooth user interfaces and connecting them 
+              to reliable backend systems. My goal is to keep learning new tools and prepare myself for a successful career 
+              in web development.
             </p>
 
             <div className='flex flex-col sm:flex-row gap-4 pt-4 justify-center'>
@@ -39,19 +41,21 @@ const AboutSection = () => {
                 <Code className='h-6 w-6'/>
                 </div>
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'>Web Development</h4>
-                  <p className='text-muted-foreground'>Creating responsive websites and web applications with modern framework.</p>
+                  <h4 className='font-semibold text-lg'>Strong foundation in MERN Stack</h4>
+                  <p className='text-muted-foreground'>I have a solid foundation in modern 
+                    tools like MERN Stack and can easily adapt to new technologies a project requires.</p>
                 </div>
               </div>
             </div>
             <div className='gradient-border p-6 card-hover'> 
               <div className='flex items-start gap-4'>
                 <div className='p-3 rounded-full bg-primary/10'>
-                <User className='h-6 w-6'/>
+                <Zap className='h-6 w-6'/>
                 </div>
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'>Web Development</h4>
-                  <p className='text-muted-foreground'>Creating responsive websites and web applications with modern framework.</p>
+                  <h4 className='font-semibold text-lg'>Fast Learner</h4>
+                  <p className='text-muted-foreground'>I catch on quickly to new concepts and programming languages. 
+                    I love picking up new skills and can get up to speed on a new project or tech stack in no time.</p>
                 </div>
               </div>
             </div>
@@ -61,8 +65,8 @@ const AboutSection = () => {
                 <Briefcase className='h-6 w-6'/>
                 </div>
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'>Web Development</h4>
-                  <p className='text-muted-foreground'>Creating responsive websites and web applications with modern framework.</p>
+                  <h4 className='font-semibold text-lg'>Flexible & Adaptable</h4>
+                  <p className='text-muted-foreground'>I handle change well. Whether it’s switching to a different task, learning a new tool, or adjusting to fresh project goals, I adapt easily and keep things moving forward.</p>
                 </div>
               </div>
             </div>

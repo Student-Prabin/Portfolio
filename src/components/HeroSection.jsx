@@ -12,7 +12,7 @@ const HeroSection = () => {
             <span className='text-gradient ml-2 opacity-0 animate-fade-in-delay-2'>Dahal</span>
         </h1>
         <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3'>
-            I am a student who is very interested in web development. I am currently learning MERN Stack and am trying to learn frontend web development.
+            I am a BSc.IT student, currently channeling my interest in technology into full-stack web development. Along with my university curriculum, I am actively expanding my practical skills in modern frameworks and libraries, aiming to build robust and responsive webapps.
         </p>
 
         <div className='pt-4 opacity-0 animate-fade-in-delay-4'>

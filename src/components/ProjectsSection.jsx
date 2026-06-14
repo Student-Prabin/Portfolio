@@ -1,4 +1,5 @@
 import { ArrowRight, ExternalLink, FileCode2, Link } from 'lucide-react'
+import { DiGithub } from 'react-icons/di'
 import React from 'react'
 
 const ProjectsSection = () => {
@@ -26,17 +27,16 @@ const ProjectsSection = () => {
             description: "Task Planner is a simple and efficient web-based To-Do application designed to help users organize theirdaily tasks effortlessly.",
             image: '/projects/TaskPlanner.png',
             tags: ["React", "Tailwind","JavaScript"],
-            demoUrl: "https://meal-zone-pi.vercel.app/",
+            demoUrl: "https://to-do-app-lake-iota.vercel.app/",
             githubUrl: "https://github.com/Student-Prabin/ToDo-app",
         }
     ]
 
     return (
-        <section id='projects' className='py-24 px-4 relative'>
+       <section id='projects' className='py-24 px-4 relative'>
             <div className='container mx-auto max-w-5xl'>
                 <h2 className='text-3xl md:text-4xl font-bold mb-4 text-center'>
-                    {""}
-                    Featured<span className='text-primary'>Projects</span>
+                    Featured <span className='text-primary'>Projects</span>
                 </h2>
                 <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto'>
                     Here are some of my recent projects. Each project was carefully crafted with attention to detail,
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
                         <div key={key} className='group bg-card rounded-lg overflow-hidden shadow-xs card-hover'>
                             <div className='h-48 overflow-hidden'>
                                 <img src={project.image} alt={project.title} className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110' />
-                            </div>
+                            </div >
 
                             <div className='p-6'>
                                 <div className='flex flex-wrap gap-2 mb-4 justify-left'>
@@ -61,7 +61,7 @@ const ProjectsSection = () => {
                             <div className='flex justify-between items-center'>
                                 <div className='flex space-x-3 '>
                                     <a href={project.demoUrl} target='_blank' className='text-foreground/80 hover:text-primary transition-colors duration-300'><Link size={20}/>Live Demo</a>
-                                    <a href={project.githubUrl} target='_blank' className='text-foreground/80 hover:text-primary transition-colors duration-300'><FileCode2 size={20}/>GitHub</a>
+                                    <a href={project.githubUrl} target='_blank' className='text-foreground/80 hover:text-primary transition-colors duration-300'><DiGithub size={20}/>GitHub</a>
                                 </div>
                             </div>
                             </div>

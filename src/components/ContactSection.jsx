@@ -15,7 +15,7 @@ const ContactSection = () => {
                 <p className='text-center text-muted-foreground mb-8 max-w-2xl mx-auto'>
                     Feel free to reach out.
                 </p>
-                <h3 className=' text-2xl font-semibold mb-6 mx-auto'>Contact Me</h3>
+                <h3 className=' text-2xl font-semibold mb-6 mx-auto'>Let's Connect</h3>
                 {/* Switched container to a responsive grid instead of flex + space-x */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start max-w-4xl mx-auto">
 

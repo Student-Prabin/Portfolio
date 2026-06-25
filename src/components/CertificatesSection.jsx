@@ -15,6 +15,12 @@ const CertificatesSection = () => {
             image: '/certificates/FoundationOfUX.png',
             check: "https://coursera.org/share/c9806ddebe65a762b922bd28eb4dca93",
 
+        }, {
+            id: 3,
+            title: "Google AI Essentials",
+            image: '/certificates/AI.png',
+            check: "https://coursera.org/share/69ced204d126a1d97199028ef36d4b5a",
+
         },
     ]
 
@@ -28,7 +34,7 @@ const CertificatesSection = () => {
                     Here are some of the certificates I have collected so far.
                 </p>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 sm:10 md:30 lg:gap-40 cursor-pointer'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:10 md:30 lg:gap-8 cursor-pointer'>
                     {certificates.map((certificate, key) => (
                         <div key={key} className='group bg-card rounded-lg overflow-hidden shadow-xs card-hover'>
                             <div className='h-48 overflow-hidden'>

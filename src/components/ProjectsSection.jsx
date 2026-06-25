@@ -29,6 +29,24 @@ const ProjectsSection = () => {
             tags: ["React", "Tailwind","JavaScript"],
             demoUrl: "https://to-do-app-lake-iota.vercel.app/",
             githubUrl: "https://github.com/Student-Prabin/ToDo-app",
+        },
+        {
+            id: 4,
+            title: "Music Player",
+            description: "A modern and responsive web-based music player built with HTML, CSS, and JavaScript. It allows users to play, pause, skip tracks, and enjoy their favorite songs through an elegant and interactive interface.",
+            image: '/projects/MusicPlayer.png',
+            tags: ["React", "Tailwind","JavaScript"],
+            demoUrl: "https://music-player-ten-ruby-73.vercel.app/",
+            githubUrl: "https://github.com/Student-Prabin/Music-Player",
+        },
+        {
+            id: 5,
+            title: "Memory Game",
+            description: "An interactive, browser-based memory card game built to challenge and improve short-term visual retention. Flip cards, find matching pairs, and try to clear the board!",
+            image: '/projects/MemoryGame.png',
+            tags: ["React", "Tailwind","JavaScript"],
+            demoUrl: "https://memory-card-game-beta-sand.vercel.app/",
+            githubUrl: "https://github.com/Student-Prabin/Memory-Card-Game",
         }
     ]
 

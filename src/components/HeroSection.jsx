@@ -3,29 +3,27 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section id='hero'className='relative min-h-screen flex flex-col items-center justify-center px-4'>
+    <section id='hero' className='relative min-h-screen flex flex-col items-center justify-center px-4'>
       <div className='container max-w-4xl mx-auto text-center z-10'>
-        <div className='space-y-6 '>
-        <h1 className='text-4xl md:text-6xl font-bold tracking-tight'>
-            <span className='opacity-0 animate-fade-in'>Hi I'm </span>
-            <span className='text-primary opacity-0 animate-fade-in-delay-1'>Prabin</span>
-            <span className='text-gradient ml-2 opacity-0 animate-fade-in-delay-2'>Dahal</span>
-        </h1>
-        <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3'>
-            I am a BSc.IT student, currently channeling my interest in technology into full-stack web development. Along with my university curriculum, I am actively expanding my practical skills in modern frameworks and libraries, aiming to build robust and responsive webapps.
-        </p>
+        <div className='space-y-6 animate-fade-in'>
+          <h1 className='text-4xl md:text-6xl font-bold tracking-tight text-foreground'>
+            Hi, I'm <span className='text-primary'>Prabin</span> <span className='text-gradient'>Dahal</span>
+          </h1>
+          
+          <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto'>
+            I am a BSc.IT student, currently channeling my interest in technology into Full-Stack MERN Web Development. Along with my university curriculum, I am actively expanding my practical skills in modern frameworks and libraries, aiming to build robust and responsive webapps.
+          </p>
 
-        <div className='pt-4 opacity-0 animate-fade-in-delay-4'>
+          <div className='pt-4'>
             <a href='#projects' className='cosmic-button'>View My Work</a>
-        </div>
+          </div>
         </div>
       </div>
 
-    <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce'>
-    <span className='text-sm text-muted-foreground mb-2 '>Scroll</span>
-    <ArrowDown className='h-5 w-5 text-primary'/>
-    </div>
-
+      <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce'>
+        <span className='text-sm text-muted-foreground mb-2'>Scroll</span>
+        <ArrowDown className='h-5 w-5 text-primary'/>
+      </div>
     </section>
   )
 }

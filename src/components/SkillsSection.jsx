@@ -1,12 +1,11 @@
-import React, { act, useState } from 'react'
+import React, { useState } from 'react'
 import { cn } from '../lib/utils';
 
 const SkillsSection = () => {
 
-    const [activeCategory,setActiveCategory]=useState("all")
+    const [activeCategory, setActiveCategory] = useState("all")
 
     const skills = [
-
         { name: "HTML", level: 95, category: "frontend" },
         { name: "CSS", level: 90, category: "frontend" },
         { name: "JavaScript", level: 75, category: "frontend" },
@@ -19,17 +18,14 @@ const SkillsSection = () => {
         { name: "MongoDB", level: 65, category: "backend" },
         { name: "PostgreSQL", level: 30, category: "backend" },
 
-        { name: "Git/Github", level: 80, category: "tools" },
+        { name: "Git / GitHub", level: 80, category: "tools" },
         { name: "Figma", level: 75, category: "tools" },
         { name: "Canva", level: 85, category: "tools" },
         { name: "Postman", level: 70, category: "tools" },
-        
-
-
     ]
-    const categories=['all','frontend','backend','tools'];
-
-    const filteredSkills=skills.filter((skill)=> activeCategory === "all" || skill.category === activeCategory)
+    
+    const categories = ['all', 'frontend', 'backend', 'tools'];
+    const filteredSkills = skills.filter((skill) => activeCategory === "all" || skill.category === activeCategory)
 
     return (
         <section id='skills' className='py-24 px-4 relative bg-secondary/30'>
@@ -38,27 +34,51 @@ const SkillsSection = () => {
                     My <span className='text-primary'>Skills</span>
                 </h2>
 
-                <div className='flex flex-wrap justify-center gap-4 mb-12'>
-                {categories.map((category,key)=>(
-                    <button key={key} 
-                    onClick={()=>{setActiveCategory(category)}}
-                    className={cn('px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer',
-                        activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary" 
-                    )}>{category}</button>
-                ))}
+        
+                <div className='flex flex-wrap justify-center gap-4 mb-12' role="tablist" aria-label="Skill categories">
+                    {categories.map((category, key) => (
+                        <button 
+                            key={key} 
+                            role="tab"
+                            aria-selected={activeCategory === category}
+                            onClick={() => { setActiveCategory(category) }}
+                            className={cn('px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer font-medium text-sm',
+                                activeCategory === category 
+                                    ? "bg-primary text-primary-foreground shadow-sm" 
+                                    : "bg-secondary/70 text-foreground hover:bg-secondary" 
+                            )}
+                        >
+                            {category}
+                        </button>
+                    ))}
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredSkills.map((skill, key) => (
-                        <div key={key} className='bg-card p-6 rounded-lg shadow-xs card-hover'>
-                            <div className='text-left mb-4'>
-                                <h3 className='font-semibold text-lg'>{skill.name}</h3>
+                        <div key={key} className='bg-card p-6 rounded-lg shadow-xs card-hover border border-border/40'>
+                            <div className='text-left mb-3'>
+                   
+                                <p className='font-semibold text-lg text-foreground'>{skill.name}</p>
                             </div>
-                            <div className='w-full bg-secondary/50 h-2 rounded-full overflow-hidden'>
-                                <div className='bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]]'
-                                style={{width:skill.level+'%'}} />
+                            
+  
+                            <div 
+                                className='w-full bg-secondary/50 h-2 rounded-full overflow-hidden'
+                                role="progressbar" 
+                                aria-valuenow={skill.level} 
+                                aria-valuemin="0" 
+                                aria-valuemax="100"
+                                aria-label={`${skill.name} proficiency level`}
+                            >
+                
+                                <div 
+                                    className='bg-primary h-2 rounded-full origin-left transition-all duration-1000 ease-out'
+                                    style={{ width: `${skill.level}%` }} 
+                                />
                             </div>
-                            <div className=' text-right mt-1'><span className='text-sm text-muted-foreground'>{skill.level}%</span></div>
+                            <div className='text-right mt-1.5'>
+                                <span className='text-xs font-medium text-muted-foreground'>{skill.level}%</span>
+                            </div>
                         </div>
                     ))}
                 </div>

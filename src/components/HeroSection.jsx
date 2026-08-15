@@ -11,7 +11,7 @@ const HeroSection = () => {
           </h1>
           
           <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto'>
-            I am a BSc.IT student, currently channeling my interest in technology into Full-Stack MERN Web Development. Along with my university curriculum, I am actively expanding my practical skills in modern frameworks and libraries, aiming to build robust and responsive webapps.
+            I am Prabin Dahal, a BSc.IT student, currently channeling my interest in technology into Full-Stack MERN Web Development. Along with my university curriculum, I am actively expanding my practical skills in modern frameworks and libraries, aiming to build robust and responsive webapps.
           </p>
 
           <div className='pt-4'>
